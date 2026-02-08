@@ -330,7 +330,7 @@ class Config(context: Context) : BaseConfig(context) {
         set(allowPhotoGestures) = prefs.edit().putBoolean(ALLOW_PHOTO_GESTURES, allowPhotoGestures).apply()
 
     var allowVideoGestures: Boolean
-        get() = prefs.getBoolean(ALLOW_VIDEO_GESTURES, true)
+        get() = prefs.getBoolean(ALLOW_VIDEO_GESTURES, false)
         set(allowVideoGestures) = prefs.edit().putBoolean(ALLOW_VIDEO_GESTURES, allowVideoGestures).apply()
 
     var slideshowInterval: Int
@@ -564,15 +564,15 @@ class Config(context: Context) : BaseConfig(context) {
         set(wereFavoritesMigrated) = prefs.edit().putBoolean(WERE_FAVORITES_MIGRATED, wereFavoritesMigrated).apply()
 
     var showFolderMediaCount: Int
-        get() = prefs.getInt(FOLDER_MEDIA_COUNT, FOLDER_MEDIA_CNT_LINE)
+        get() = prefs.getInt(FOLDER_MEDIA_COUNT, FOLDER_MEDIA_CNT_BRACKETS)
         set(showFolderMediaCount) = prefs.edit().putInt(FOLDER_MEDIA_COUNT, showFolderMediaCount).apply()
 
     var folderStyle: Int
-        get() = prefs.getInt(FOLDER_THUMBNAIL_STYLE, FOLDER_STYLE_SQUARE)
+        get() = prefs.getInt(FOLDER_THUMBNAIL_STYLE, FOLDER_STYLE_ROUNDED_CORNERS)
         set(folderStyle) = prefs.edit().putInt(FOLDER_THUMBNAIL_STYLE, folderStyle).apply()
 
     var limitFolderTitle: Boolean
-        get() = prefs.getBoolean(LIMIT_FOLDER_TITLE, false)
+        get() = prefs.getBoolean(LIMIT_FOLDER_TITLE, true)
         set(limitFolderTitle) = prefs.edit().putBoolean(LIMIT_FOLDER_TITLE, limitFolderTitle).apply()
 
     var thumbnailSpacing: Int
@@ -580,7 +580,7 @@ class Config(context: Context) : BaseConfig(context) {
         set(thumbnailSpacing) = prefs.edit().putInt(THUMBNAIL_SPACING, thumbnailSpacing).apply()
 
     var fileRoundedCorners: Boolean
-        get() = prefs.getBoolean(FILE_ROUNDED_CORNERS, false)
+        get() = prefs.getBoolean(FILE_ROUNDED_CORNERS, true)
         set(fileRoundedCorners) = prefs.edit().putBoolean(FILE_ROUNDED_CORNERS, fileRoundedCorners).apply()
 
     var customFoldersOrder: String
