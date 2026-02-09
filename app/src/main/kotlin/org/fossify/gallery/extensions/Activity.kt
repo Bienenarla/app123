@@ -111,6 +111,12 @@ fun SimpleActivity.launchSettings() {
     startActivity(Intent(applicationContext, SettingsActivity::class.java))
 }
 
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+fun SimpleActivity.launchNextcloud() {
+    hideKeyboard()
+    startActivity(Intent(applicationContext, SettingsActivity::class.java))
+}
+
 fun SimpleActivity.launchAbout() {
     val licenses = LICENSE_GLIDE or LICENSE_CROPPER or LICENSE_RTL or LICENSE_SUBSAMPLING or LICENSE_PATTERN or LICENSE_REPRINT or LICENSE_GIF_DRAWABLE or
         LICENSE_PICASSO or LICENSE_EXOPLAYER or LICENSE_SANSELAN or LICENSE_FILTERS or LICENSE_GESTURE_VIEWS or LICENSE_APNG

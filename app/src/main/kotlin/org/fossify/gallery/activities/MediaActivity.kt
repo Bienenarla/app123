@@ -75,6 +75,7 @@ import org.fossify.gallery.extensions.getHumanizedFilename
 import org.fossify.gallery.extensions.isDownloadsFolder
 import org.fossify.gallery.extensions.launchAbout
 import org.fossify.gallery.extensions.launchCamera
+import org.fossify.gallery.extensions.launchNextcloud
 import org.fossify.gallery.extensions.launchSettings
 import org.fossify.gallery.extensions.launchGesturePlayer
 import org.fossify.gallery.extensions.mediaDB
@@ -391,6 +392,7 @@ class MediaActivity : SimpleActivity(), MediaOperationsListener {
                 R.id.unset_as_default_folder -> unsetAsDefaultFolder()
                 R.id.slideshow -> startSlideshow()
                 R.id.settings -> launchSettings()
+                R.id.nextcloud -> launchNextcloud()
                 R.id.about -> launchAbout()
                 else -> return@setOnMenuItemClickListener false
             }

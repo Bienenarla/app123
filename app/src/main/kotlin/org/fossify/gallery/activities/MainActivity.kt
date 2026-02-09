@@ -103,6 +103,7 @@ import org.fossify.gallery.extensions.handleMediaManagementPrompt
 import org.fossify.gallery.extensions.isDownloadsFolder
 import org.fossify.gallery.extensions.launchAbout
 import org.fossify.gallery.extensions.launchCamera
+import org.fossify.gallery.extensions.launchNextcloud
 import org.fossify.gallery.extensions.launchSettings
 import org.fossify.gallery.extensions.mediaDB
 import org.fossify.gallery.extensions.movePathsInRecycleBin
@@ -510,6 +511,7 @@ class MainActivity : SimpleActivity(), DirectoryOperationsListener {
                 R.id.set_as_default_folder -> setAsDefaultFolder()
                 R.id.more_apps_from_us -> launchMoreAppsFromUsIntent()
                 R.id.settings -> launchSettings()
+                R.id.nextcloud -> launchNextcloud()
                 R.id.about -> launchAbout()
                 else -> return@setOnMenuItemClickListener false
             }

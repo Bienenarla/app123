@@ -74,6 +74,11 @@
         android:title="@string/settings"
         app:showAsAction="ifRoom" />
     <item
+        android:id="@+id/nextcloud"
+        android:icon="@drawable/ic_cloud_vector"
+        android:title="@string/nextcloud"
+        app:showAsAction="ifRoom" />
+    <item
         android:id="@+id/about"
         android:icon="@drawable/ic_info_vector"
         android:title="@string/about"
